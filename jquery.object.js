@@ -1,7 +1,7 @@
 jQuery.clone = function(obj) {
   var _Object = {
     clone: function(obj) {
-      function F(o) { _.extend(this, o); }
+      function F(o) { jQuery.extend(this, o); }
       F.prototype = this;
       return new F(obj);
     }
