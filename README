@@ -1,0 +1,14 @@
+A simple object cloner wrapped in jQuery to get to true prototypal inheritance.
+
+Took it from the man himself, Douglas Crockford.
+
+Try it out like this:
+
+Named = _.clone({
+  inspect: function() {alert(this.name);}
+  name: "Provide a name!"
+});
+
+Named.clone({name: "Felix"}).inspect();
+
+It's about that simple.
